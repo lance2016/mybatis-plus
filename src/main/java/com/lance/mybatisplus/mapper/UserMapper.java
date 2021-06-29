@@ -9,6 +9,5 @@ import com.lance.mybatisplus.entity.User;
  * @author: flchen
  * @create: 2021-04-11 18:44
  **/
-
 public interface UserMapper extends BaseMapper<User> {
 }

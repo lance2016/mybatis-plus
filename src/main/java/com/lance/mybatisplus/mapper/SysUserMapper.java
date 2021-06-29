@@ -1,7 +1,7 @@
 package com.lance.mybatisplus.mapper;
 
-import com.lance.mybatisplus.entity.SysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.lance.mybatisplus.entity.SysUser;
 
 /**
  * <p>
