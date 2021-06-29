@@ -36,7 +36,7 @@ public class User {
     @Version
     private Integer version;
     private StatusEnum status;
-    @TableLogic
-    private Integer isDelete;
+    @TableLogic()
+    private LocalDateTime deleteTime;
 
 }

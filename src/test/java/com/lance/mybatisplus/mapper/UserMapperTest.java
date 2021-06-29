@@ -41,6 +41,6 @@ class UserMapperTest {
 
     @Test
     public void logisticDelete(){
-        userMapper.deleteById(1381212376769294342L);
+        userMapper.deleteById(1381212376769294346L);
     }
 }
