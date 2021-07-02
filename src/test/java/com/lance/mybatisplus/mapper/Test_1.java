@@ -9,6 +9,8 @@ import org.springframework.web.client.RestTemplate;
 import redis.clients.jedis.Jedis;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @RunWith(SpringRunner.class)
@@ -42,6 +44,16 @@ public class Test_1{
         jedis.set("runoobkey", "www.runoob.com");
         // 获取存储的数据并输出
         System.out.println("redis 存储的字符串为: "+ jedis.get("runoobkey"));
+        if(jedis.exists("runoobkey")){
+            System.out.println("www.runoob.com".equals(jedis.get("runoobkey")));
+        }
         System.out.println(jedis.keys("*"));
+    }
+
+    @Test
+    public void test2(){
+        List l = new ArrayList<>();
+        l.add("1");
+        l.add(2);
     }
 }
