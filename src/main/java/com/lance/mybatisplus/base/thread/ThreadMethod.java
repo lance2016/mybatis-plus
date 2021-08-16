@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
-
 /**
  * 实现多线程的三种方法
  * 1. 继承Thread类，重写run方法
@@ -80,4 +79,5 @@ class MyThread3 implements Callable<Integer>{
         }
         return num;
     }
+
 }

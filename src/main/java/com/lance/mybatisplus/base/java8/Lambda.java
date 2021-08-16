@@ -7,6 +7,7 @@ package com.lance.mybatisplus.base.java8;
 public class Lambda {
 
     public static void main(String []args){
+
         Lambda tester = new Lambda();
 
         // 类型声明
@@ -51,4 +52,5 @@ public class Lambda {
     private int operate(int a, int b, MathOperation mathOperation){
         return mathOperation.operation(a, b);
     }
+
 }
