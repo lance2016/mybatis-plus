@@ -14,7 +14,7 @@ import java.util.List;
 
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class Test_1{
     @Resource
     private RedisTemplate<String,Object> redisTemplate;
@@ -47,7 +47,7 @@ public class Test_1{
         if(jedis.exists("runoobkey")){
             System.out.println("www.runoob.com".equals(jedis.get("runoobkey")));
         }
-        System.out.println(jedis.keys("*"));
+        System.out.println(jedis.get("runoobkey"));
     }
 
     @Test
