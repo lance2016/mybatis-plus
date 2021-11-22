@@ -5,11 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @program: mybatisplus  StudentConfig
- * @description:
- * @author: flchen
- * @create: 2021-11-18 14:18
+ *  通过方法返回第三方jar包的对象，然后项目中就可以使用autowired导入
  **/
+
+
 
 @Configuration
 public class StudentConfig {

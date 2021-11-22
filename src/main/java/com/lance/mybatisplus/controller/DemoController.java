@@ -21,6 +21,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/demo")
 @RequiredArgsConstructor
+//@EnableConfigurationProperties(DataSourceProperty.class)
 public class DemoController {
 
 
