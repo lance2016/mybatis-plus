@@ -45,6 +45,13 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+
         <!--        代码生成器-->
         <!-- MP 核心库 -->
         <dependency>
@@ -85,6 +92,7 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                    <fork>true</fork> <!--重要-->
                 </configuration>
             </plugin>
         </plugins>
